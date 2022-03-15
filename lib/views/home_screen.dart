@@ -70,8 +70,10 @@ class HomeScreen extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => ResultView(
-                                        height: double.parse(heightController.text),
-                                        weight: double.parse(weightController.text),
+                                        height:
+                                            double.parse(heightController.text),
+                                        weight:
+                                            double.parse(weightController.text),
                                         age: int.parse(ageController.text),
                                       )),
                             );

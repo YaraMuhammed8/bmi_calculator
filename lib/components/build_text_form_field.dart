@@ -1,7 +1,6 @@
 import 'package:bmi_calculator/blocs/unit/unit_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../models/units.dart';
 
 class BuildTextFormField extends StatelessWidget {

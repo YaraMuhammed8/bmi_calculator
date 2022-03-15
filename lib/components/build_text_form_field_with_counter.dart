@@ -22,11 +22,11 @@ class BuildTextFormFieldWithCounter extends StatelessWidget {
             controller: controller,
             keyboardType: TextInputType.number,
             textAlign: TextAlign.center,
-            validator: (value){
-            if(value==null || value.trim().isEmpty) {
-              return "please fill the field";
-            }
-          },
+            validator: (value) {
+              if (value == null || value.trim().isEmpty) {
+                return "please fill the field";
+              }
+            },
             style: const TextStyle(
                 color: Colors.blueGrey,
                 fontSize: 20,

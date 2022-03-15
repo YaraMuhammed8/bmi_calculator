@@ -10,17 +10,19 @@ class ResultView extends StatelessWidget {
   double weight;
   int age;
   double bmi = 0;
-  String status="";
-  ResultView({required this.height, required this.age, required this.weight}){
+  String status = "";
+  ResultView({required this.height, required this.age, required this.weight}) {
     bmi = weight;
-    if(heightUnit =='cm') {
-      height = height / 100.0;}
-    bmi /= (height * height);
-    for(int i=0;i<bmiStatus.length;i++){
-      if(bmi >= bmiStatus[i].start && bmi <= bmiStatus[i].end){
-        status =  bmiStatus[i].status;
+    if (heightUnit == 'cm') {
+      height = height / 100.0;
     }
-  }}
+    bmi /= (height * height);
+    for (int i = 0; i < bmiStatus.length; i++) {
+      if (bmi >= bmiStatus[i].start && bmi <= bmiStatus[i].end) {
+        status = bmiStatus[i].status;
+      }
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

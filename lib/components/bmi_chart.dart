@@ -32,10 +32,10 @@ class BMIChart extends StatelessWidget {
               color:
                   pointed ? const Color(0xff89ffc8) : const Color(0xffc4c4c4),
               labelStyle: const GaugeTextStyle(
-                  color: Colors.white,
-                  fontFamily: "Cairo",
-                  fontWeight: FontWeight.w500,
-                  fontSize: 13,
+                color: Colors.white,
+                fontFamily: "Cairo",
+                fontWeight: FontWeight.w500,
+                fontSize: 13,
               ),
               startWidth: 50,
               endWidth: 50,

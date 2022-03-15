@@ -10,8 +10,8 @@ class UnitCubit extends Cubit<UnitState> {
   String selectedWeightUnit = weightUnit;
   String selectedHeightUnit = heightUnit;
   static UnitCubit get(context) => BlocProvider.of(context);
-  changeUnit(String value,String type){
-    if(type=='w') {
+  changeUnit(String value, String type) {
+    if (type == 'w') {
       selectedWeightUnit = value;
       weightUnit = value;
     } else {

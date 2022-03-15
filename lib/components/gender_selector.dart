@@ -77,7 +77,9 @@ class GenderItem extends StatelessWidget {
               color: isActive ? const Color(0xff006672) : Colors.blueGrey,
             ),
           ),
-          const SizedBox(height: 10,),
+          const SizedBox(
+            height: 10,
+          ),
           Text(
             text,
             style: TextStyle(
