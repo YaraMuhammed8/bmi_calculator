@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class BuildButton extends StatelessWidget {
+class CustomButton extends StatelessWidget {
   String text;
   Function onPressed;
 
-  BuildButton({required this.text, required this.onPressed});
+  CustomButton({required this.text, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +15,8 @@ class BuildButton extends StatelessWidget {
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
             colors: [
-              Color(0xff89ffc8),
-              Color(0xff66ffb8),
+              Color(0xff6AD8E3),
+              Color(0xff6AE3C8),
             ],
           )),
       child: MaterialButton(

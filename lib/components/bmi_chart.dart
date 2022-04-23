@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 import '../models/bmi_status.dart';
+import '../theme/app_text_styles.dart';
 
 class BMIChart extends StatelessWidget {
   double bmi;
@@ -17,9 +18,8 @@ class BMIChart extends StatelessWidget {
           showTicks: false,
           showLabels: false,
           axisLineStyle: const AxisLineStyle(
-            thickness: 15,
             cornerStyle: CornerStyle.bothCurve,
-            color: Color(0xffAFEAE8),
+            color: Color(0xff6ADDD8),
           ),
           ranges: List.generate(bmiStatus.length, (index) {
             bool pointed = false;
@@ -30,15 +30,15 @@ class BMIChart extends StatelessWidget {
               endValue: bmiStatus[index].end,
               label: bmiStatus[index].status,
               color:
-                  pointed ? const Color(0xff89ffc8) : const Color(0xffc4c4c4),
-              labelStyle: const GaugeTextStyle(
+                  pointed ? const Color(0xff6AD8E3) :Colors.grey.shade400,
+              labelStyle: GaugeTextStyle(
                 color: Colors.white,
-                fontFamily: "Cairo",
+                fontFamily: "Tajawal",
                 fontWeight: FontWeight.w500,
-                fontSize: 13,
+                fontSize: 10,
               ),
-              startWidth: 50,
-              endWidth: 50,
+              startWidth: 20,
+              endWidth: 20,
             );
           }),
           pointers: [
@@ -55,11 +55,7 @@ class BMIChart extends StatelessWidget {
               positionFactor: 0.5,
               widget: Text(
                 bmi.toStringAsFixed(2),
-                style: TextStyle(
-                    color: Colors.blueGrey.shade800,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: "Tajawal",
-                    fontSize: 20),
+                style: AppTextStyles.title,
               ),
             )
           ],

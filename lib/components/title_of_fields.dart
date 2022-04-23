@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_text_styles.dart';
+
 class TitleOfFields extends StatelessWidget {
   String title;
   TitleOfFields({required this.title});
@@ -8,11 +10,7 @@ class TitleOfFields extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(
-          color: Colors.blueGrey.shade700,
-          fontSize: 18,
-          fontWeight: FontWeight.w900,
-          fontFamily: "Tajawal"),
+     style: AppTextStyles.title,
     );
   }
 }

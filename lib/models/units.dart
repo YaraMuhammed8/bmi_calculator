@@ -1,4 +1,4 @@
-List<String> weightUnits = ["kg", "pound"];
-List<String> heightUnits = ["m", "cm"];
-String weightUnit = "kg";
-String heightUnit = "m";
+class Units{
+  static List<String> weightUnits = ["kg", "pound"];
+  static List<String> heightUnits = ["m", "cm"];
+}
